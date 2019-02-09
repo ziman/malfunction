@@ -1,5 +1,7 @@
 opam-version: "1.2"
 maintainer: "stephen.dolan@cl.cam.ac.uk"
+synopsis: "synopsis"
+description: "description"
 authors: ["Stephen Dolan"]
 homepage: "https://github.com/stedolan/malfunction"
 bug-reports: "https://github.com/stedolan/malfunction/issues"
