@@ -1,14 +1,16 @@
 opam-version: "1.2"
 maintainer: "stephen.dolan@cl.cam.ac.uk"
+synopsis: "synopsis"
+description: "description"
 authors: ["Stephen Dolan"]
 homepage: "https://github.com/stedolan/malfunction"
 bug-reports: "https://github.com/stedolan/malfunction/issues"
 dev-repo: "https://github.com/stedolan/malfunction.git"
 license: "LGPL"
 build:
-[[ "jbuilder" "build" "--only-packages" "%{name}%" "--root" "." "-j" jobs "@install" ]]
+[[ "dune" "build" "--only-packages" "%{name}%" "--root" "." "-j" jobs "@install" ]]
 build-test:
-[[ "jbuilder" "build" "--only-packages" "%{name}%" "--root" "." "-j" jobs "@runtest" ]]
+[[ "dune" "build" "--only-packages" "%{name}%" "--root" "." "-j" jobs "@runtest" ]]
 available: [ ocaml-version >= "4.04" ]
 depends: [
   "ocamlfind"
